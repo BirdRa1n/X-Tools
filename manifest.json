@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "X Tools",
+    "version": "1.0",
+    "description": "X Tools",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "X Tools"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://x.com/*",
+                "*://twitter.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
