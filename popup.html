@@ -7,11 +7,55 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
-    <label class="switch">
-        <input type="checkbox" id="toggleHide">
-        <span class="slider"></span>
-    </label>
+<body class="bg-gray-900 text-white p-4 text-sm" style="width: 300px;">
+    <h1 class="text-lg font-bold mb-4">X Tools</h1>
+
+    <!-- Appearance -->
+    <section class="mb-4">
+        <h2 class="text-blue-400 font-semibold mb-2">🎨 Appearance</h2>
+        <div class="flex items-center justify-between py-1">
+            <span>Text color</span>
+            <input type="color" id="colorText" class="ml-2 w-8 h-6 p-0 border-none">
+        </div>
+        <div class="flex items-center justify-between py-1">
+            <span>Background color</span>
+            <input type="color" id="colorBg" class="ml-2 w-8 h-6 p-0 border-none">
+        </div>
+        <label class="flex items-center justify-between py-1 cursor-pointer">
+            <span>Dark/Light theme</span>
+            <input type="checkbox" id="toggleTheme" class="form-checkbox h-4 w-4">
+        </label>
+    </section>
+
+    <!-- Hiding -->
+    <section class="mb-4">
+        <h2 class="text-blue-400 font-semibold mb-2">👤 Hiding</h2>
+        <label class="flex items-center justify-between py-1 cursor-pointer">
+            <span>Hide user</span>
+            <input type="checkbox" id="toggleHideUser" class="form-checkbox h-4 w-4">
+        </label>
+        <label class="flex items-center justify-between py-1 cursor-pointer">
+            <span>Hide trends</span>
+            <input type="checkbox" id="toggleHideTrends" class="form-checkbox h-4 w-4">
+        </label>
+        <label class="flex items-center justify-between py-1 cursor-pointer">
+            <span>Hide ads</span>
+            <input type="checkbox" id="toggleHideAds" class="form-checkbox h-4 w-4">
+        </label>
+    </section>
+
+    <!-- Automation -->
+    <section class="mb-4">
+        <h2 class="text-blue-400 font-semibold mb-2">⚡ Automation</h2>
+        <label class="flex items-center justify-between py-1 cursor-pointer">
+            <span>Auto like posts</span>
+            <input type="checkbox" id="toggleAutoLike" class="form-checkbox h-4 w-4">
+        </label>
+        <label class="flex items-center justify-between py-1 cursor-pointer">
+            <span>Auto scroll</span>
+            <input type="checkbox" id="toggleAutoScroll" class="form-checkbox h-4 w-4">
+        </label>
+    </section>
     <script src="popup.js"></script>
 </body>
 
